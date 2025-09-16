@@ -3,7 +3,10 @@ body {
 }
 
 canvas {
-  background-color: rgb(136, 110, 173);
+   
+background-image: url("images/Top.jpg");;
+ background-size: cover; 
+ background-color: rgb(136, 110, 173);
   margin: 20px;
 }
 

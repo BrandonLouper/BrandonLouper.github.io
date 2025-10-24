@@ -54,7 +54,7 @@ createCollectable("cloud", 900, 200, .01);
 createCannon("top", 300, 2000);
 createCannon("right", 300, 700);
 createCannon("left", 1000, 2000);
-createCannon("top", 700, 2000);
+createCannon("top", 700, 500);
     
     
     //////////////////////////////////

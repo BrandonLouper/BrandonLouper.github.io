@@ -23,7 +23,7 @@ var background = function (window) {
         var groundY = ground.y;
         
         // container which will be returned
-        var background;
+        var background; draw.rect()
         
         //////////////////////////////////////////////////////////////////
         // ANIMATION VARIABLES HERE //////////////////////////////////////

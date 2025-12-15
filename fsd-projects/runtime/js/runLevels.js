@@ -26,7 +26,8 @@ sawBladeHitZone.y = 100;
 game.addGameItem(sawBladeHitZone);
 var obstacleImage = draw.bitmap("img/sawblade.png");
 sawBladeHitZone.addChild(obstacleImage);
-function createSawBlade(x, y){}
+
+function createSawBlade(x, y){
 var enemy = game.createGameItem("enemy", 25);
 var redSquare = draw.rect(50, 50, "red");
 redSquare.x = -25;
@@ -35,8 +36,11 @@ enemy.addChild(redSquare);
 enemy.x = 400;
 enemy.y = groundY - 50;
 game.addGameItem(enemy);
-
-    
+enemy.onPlayerCollision = function () {
+  game.changeIntegrity(-10)
+  enemy.fadeOut
+};
+}
 
     function startLevel() {
       // TODO 13 goes below here

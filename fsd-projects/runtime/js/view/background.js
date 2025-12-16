@@ -41,11 +41,11 @@ var background = function (window) {
       // TODO 1:
       // this currently fills the background with an obnoxious yellow;
       // you should modify both the height and color to suit your game
-      var backgroundFill = draw.rect(canvasWidth, canvasHeight, "blue");
+      var backgroundFill = draw.rect(canvasWidth, canvasHeight, "purple");
       background.addChild(backgroundFill);
 
       // TODO 2: - Add a moon and starfield
-      var moon = draw.bitmap("img/goku2.png");
+      var moon = draw.bitmap("img/goku9.png");
       moon.x = 1200;
       moon.y = 4;
       moon.scaleX = 1;
@@ -62,7 +62,7 @@ var background = function (window) {
         buildings.push(building);
       }
       // TODO 3: Part 1 - Add a tree
-      tree = draw.bitmap("img/tree.png");
+      tree = draw.bitmap("img/deadpool2.png");
       tree.x = 0;
       tree.y = 0;
       tree.scalex = 1.5;

@@ -59,7 +59,11 @@ createMarker(1200, groundY - 50);
 
     function startLevel() {
       // TODO 13 goes below here
-
+      var level = levelData[currentLevel]
+      var levelObjects = level.gameItems
+      for(var i = i< levelObjects.length; i++){
+        var eachObject= levelObjects[i]
+      }
 
 
       //////////////////////////////////////////////

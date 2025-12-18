@@ -41,11 +41,22 @@ enemy.onPlayerCollision = function () {
   enemy.fadeOut
 };
 function createEnemy(x,y) {
-  createEnemy(400, groundY - 10);
+ createEnemy(400, groundY - 10);
 createEnemy(800, groundY - 100);
 createEnemy(1200, groundY - 50);
 }
-function createReward(x,y){
+function createReward(x,y){ var reward = game.createGameItem("reward", 25);
+var redSquare = draw.rect(50, 50, "red");
+redSquare.x = -25;
+redSquare.y = -25;
+reward.addChild(redSquare);
+reward.x = 400;
+reward.y = groundY - 50;
+game.addGameItem(reward);
+reward.onPlayerCollision = function () {
+  game.changeIntegrity(-10)
+  reward.fadeOut
+};
   createReward(400, groundY - 10);
 createReward(800, groundY - 100);
 createReward(1200, groundY - 50);
@@ -59,11 +70,7 @@ createMarker(1200, groundY - 50);
 
     function startLevel() {
       // TODO 13 goes below here
-      var level = levelData[currentLevel]
-      var levelObjects = level.gameItems
-      for(var i = i< levelObjects.length; i++){
-        var eachObject= levelObjects[i]
-      }
+      
 
 
       //////////////////////////////////////////////

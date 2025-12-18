@@ -61,7 +61,12 @@ reward.onPlayerCollision = function () {
 createReward(800, groundY - 100);
 createReward(1200, groundY - 50);
 }
-function createMarker(x,y){
+function createMarker(x,y){ var startLevel = game.createGameItem("startLevel" , 25);
+var redSquare = draw.rect(50, 50, "red");
+redSquare.x = -25;
+redSquare.y = -25;
+reward.addChild(redSquare);
+
   createMarker(400, groundY - 10);
 createMarker(800, groundY - 100);
 createMarker(1200, groundY - 50);
